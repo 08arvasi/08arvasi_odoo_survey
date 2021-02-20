@@ -10,4 +10,4 @@ class Survey(models.Model):
 class SurveyUser(models.Model):
     _inherit = 'survey.user_input'
 
-    user_id = fields.Many2one('res.users', string="User", default=lambda self: self.env.user)
+    user_id = fields.Many2one('res.users', string="User", default=lambda self: self.env.uid)
