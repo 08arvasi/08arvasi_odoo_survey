@@ -20,11 +20,12 @@
 ##############################################################################
 {
     'name': 'Extend Survey Email Template',
-    'version': '0.2',
+    'version': '13.0.1.0.3',
     'summary': 'This module adds logic to use these fields in the email-templates.',
     'category': 'base',
     'description': """
-        This module adds logic to use these fields in the email-templates.
+        This module adds logic to use these fields in the email-templates. \n
+        v13.0.1.0.3 Adds a second email-template. \n
     """,
     'author': 'Vertel AB',
     'website': 'http://www.vertel.se',
