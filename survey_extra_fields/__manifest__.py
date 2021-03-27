@@ -20,7 +20,7 @@
 ##############################################################################
 {
     'name': 'Extend Survey Email Template',
-    'version': '13.0.1.0.3',
+    'version': '13.0.1.0.4',
     'summary': 'This module adds logic to use these fields in the email-templates.',
     'category': 'base',
     'description': """
