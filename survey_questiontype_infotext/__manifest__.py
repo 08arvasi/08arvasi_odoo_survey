@@ -19,20 +19,18 @@
 #
 ##############################################################################
 {
-    'name': 'Extend Survey Email Template',
-    'version': '13.0.1.0.3',
-    'summary': 'This module adds logic to use these fields in the email-templates.',
+    'name': 'Extend Survey Question Type',
+    'version': '13.0.1.0.1',
+    'summary': 'This module adds information text only to survey question type.',
     'category': 'base',
     'description': """
-        This module adds logic to use these fields in the email-templates. \n
-        v13.0.1.0.3 Adds a second email-template. \n
+         This module adds a new question-type that allows for an extra description to be added in a survey.
     """,
     'author': 'Vertel AB',
     'website': 'http://www.vertel.se',
-    'depends': ['survey', 'base', 'partner_extra_greeting_fields', 'partner_firstname'],
+    'depends': ['survey', 'base'],
     'data': [
-        'views/survey_view.xml',
-        'data/mail_template_data.xml',
+        'views/survey_question_view.xml',
     ],
     'installable': True,
 }
