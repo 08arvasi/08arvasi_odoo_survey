@@ -40,5 +40,45 @@
             <field name="auto_delete" eval="True"/>
             <field name="user_signature" eval="False"/>
         </record>
+        
+     <record id="survey.mail_template_user_input_invite2" model="mail.template">
+            <field name="name">Survey: Invite2</field>
+            <field name="model_id" ref="survey.model_survey_user_input" />
+            <field name="subject">Participate to ${object.survey_id.title} survey</field>
+            <field name="email_to">${(object.partner_id.email_formatted or object.email) |safe}</field>
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px; font-size: 13px;">
+                    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                        Dear ${object.partner_id.firstname or 'participant'}<br/><br/>
+                        ${object.partner_id.greeting_phrase1 or ''}<br/><br/>
+                        % if object.survey_id.certificate:
+                            You have been invited to take a new certification2.
+                        % else:
+                            We are conducting a survey and your response would be appreciated2.
+                        % endif
+                        <div style="margin: 16px 0px 16px 0px;">
+                            <a href="${('%s?answer_token=%s' % (object.survey_id.public_url, object.token)) | safe}"
+                                style="background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;">
+                                % if object.survey_id.certificate:
+                                    Start Certification2
+                                % else:
+                                    Start Survey
+                                % endif
+                            </a>
+                        </div>
+                        % if object.deadline:
+                            Please answer the survey for ${format_date(object.deadline)}2.<br/><br/>
+                        % endif
+                        <br/> 
+                        ${object.partner_id.greeting_phrase2 or ''}<br/><br/>
+                        Thank you for your participation.<br/><br/>
+                        ${object.user_id.firstname}
+                    </p>
+                </div>
+            </field>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="auto_delete" eval="True"/>
+            <field name="user_signature" eval="False"/>
+        </record>
     </data>
 </odoo>
