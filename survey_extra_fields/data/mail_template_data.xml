@@ -41,7 +41,7 @@
             <field name="user_signature" eval="False"/>
         </record>
         
-     <record id="survey.mail_template_user_input_invite2" model="mail.template">
+     <record id="mail_template_user_input_invite2" model="mail.template">
             <field name="name">Survey: Invite2</field>
             <field name="model_id" ref="survey.model_survey_user_input" />
             <field name="subject">Participate to ${object.survey_id.title} survey</field>
