@@ -9,7 +9,8 @@
             <field name="body_html" type="html">
                 <div style="margin: 0px; padding: 0px; font-size: 13px;">
                     <p style="margin: 0px; padding: 0px; font-size: 13px;">
-                        ${object.partner_id.greeting_phrase1 or 'Dear'} ${object.partner_id.firstname or 'participant'}<br/><br/>
+                        Dear ${object.partner_id.firstname or 'participant'}<br/><br/>
+                        ${object.partner_id.greeting_phrase1 or ''}<br/><br/>
                         % if object.survey_id.certificate:
                             You have been invited to take a new certification.
                         % else:
@@ -28,6 +29,8 @@
                         % if object.deadline:
                             Please answer the survey for ${format_date(object.deadline)}.<br/><br/>
                         % endif
+                        <br/> 
+                        ${object.partner_id.greeting_phrase2 or ''}<br/><br/>
                         Thank you for your participation.<br/><br/>
                         ${object.user_id.firstname}
                     </p>
