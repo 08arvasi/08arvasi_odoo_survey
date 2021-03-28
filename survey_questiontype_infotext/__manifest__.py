@@ -20,7 +20,7 @@
 ##############################################################################
 {
     'name': 'Extend Survey Question Type',
-    'version': '13.0.1.0.1',
+    'version': '13.0.1.0.2',
     'summary': 'This module adds information text only to survey question type.',
     'category': 'base',
     'description': """

@@ -1,15 +1,5 @@
 <odoo>
     <data>
-        <record id="survey_question_form_view" model="ir.ui.view">
-            <field name="name">survey.question.form</field>
-            <field name="model">survey.question</field>
-            <field name="inherit_id" ref="survey.survey_question_form"/>
-            <field name="arch" type="xml">
-                <field name="question_type" position="after">
-                    <field name="information" attrs="{'invisible': [('question_type', '!=', 'information_only')]}"/>
-                </field>
-            </field>
-        </record>
 
     </data>
 </odoo>
