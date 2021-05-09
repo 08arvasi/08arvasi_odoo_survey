@@ -20,15 +20,16 @@
 ##############################################################################
 {
     'name': 'Extend Survey Email Template',
-    'version': '13.0.1.0.5',
+    'version': '13.0.1.0.6',
     'summary': 'This module adds logic to use these fields in the email-templates.',
     'category': 'base',
     'description': """
         This module adds logic to use these fields in the email-templates. \n
         v13.0.1.0.3 Adds a second email-template. \n
+        v13.0.1.0.5 Added logo and author. \n
     """,
-    'author': 'Vertel AB',
-    'website': 'http://www.vertel.se',
+    'author': 'Verified Email Europe AB',
+	'website': 'https://verified-email.com/',
     'depends': ['survey', 'base', 'partner_extra_greeting_fields', 'partner_firstname'],
     'data': [
         'views/survey_view.xml',
