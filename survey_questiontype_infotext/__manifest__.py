@@ -25,6 +25,7 @@
     'category': 'base',
     'description': """
          This module adds a new question-type that allows for an extra description to be added in a survey.
+         it is maintained in this repository: https://github.com/08arvasi/08arvasi_odoo_survey/tree/13.0/survey_questiontype_infotext
     """,
     'author': 'Vertel AB',
     'website': 'http://www.vertel.se',
