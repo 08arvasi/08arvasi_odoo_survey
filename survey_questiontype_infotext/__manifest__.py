@@ -20,16 +20,12 @@
 ##############################################################################
 {
     'name': 'Extend Survey Question Type',
-    'version': '14.0.1.0.3',
+    'version': '14.0.1.0.4',
     'summary': 'This module adds information text only to survey question type.',
     'category': 'base',
-    'description': """
-         This module adds a new question-type that allows for an extra description to be added in a survey.
-         it is maintained in this repository: https://github.com/08arvasi/08arvasi_odoo_survey/tree/14.0/survey_questiontype_infotext
-    """,
     'author': 'Vertel AB',
     'website': 'http://www.vertel.se',
-    'depends': ['survey', 'base'],
+    'depends': ['survey'],
     'data': [
         'views/survey_question_view.xml',
     ],

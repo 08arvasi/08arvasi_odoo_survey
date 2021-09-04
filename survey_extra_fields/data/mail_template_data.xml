@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-
-
-
         <record id="survey.mail_template_user_input_invite" model="mail.template">
             <field name="name">Survey: Invite</field>
             <field name="model_id" ref="survey.model_survey_user_input" />
@@ -41,7 +38,6 @@
             </field>
             <field name="lang">${object.partner_id.lang}</field>
             <field name="auto_delete" eval="True"/>
-            <field name="user_signature" eval="False"/>
         </record>
         
         <record id="mail_template_user_input_invite2" model="mail.template">
@@ -81,7 +77,6 @@
             </field>
             <field name="lang">${object.partner_id.lang}</field>
             <field name="auto_delete" eval="True"/>
-            <field name="user_signature" eval="False"/>
         </record>
 
         <record id="mail_template_user_input_invite3" model="mail.template">

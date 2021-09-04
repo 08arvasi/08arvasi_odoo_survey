@@ -20,20 +20,15 @@
 ##############################################################################
 {
     'name': 'Extend Survey Email Template',
-    'version': '14.0.1.0.6',
+    'version': '14.0.1.0.7',
     'summary': 'This module adds logic to use these fields in the email-templates.',
     'category': 'base',
-    'description': """
-        This module adds logic to use these fields in the email-templates. \n
-         it is maintained in this repository: https://github.com/08arvasi/08arvasi_odoo_survey/tree/14.0/survey_extra_fields
-        v13.0.1.0.3 Adds a second email-template. \n
-        v13.0.1.0.5 Added logo and author. \n
-		v14.0.1.0.7 Upgrade to v14.\
-		
-    """,
     'author': 'Verified Email Europe AB',
 	'website': 'https://verified-email.com/',
-    'depends': ['survey', 'base', 'partner_extra_greeting_fields', 'partner_firstname'],
+    'depends': ['survey',
+                'partner_extra_greeting_fields', # https://github.com/08arvasi/08arvasi-odoo-base/tree/14.0
+                'partner_firstname' # https://github.com/OCA/partner-contact/tree/14.0
+                ],
     'data': [
         'views/survey_view.xml',
         'data/mail_template_data.xml',
