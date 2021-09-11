@@ -20,11 +20,11 @@
 ##############################################################################
 {
     'name': 'Extend Survey Question Type',
-    'version': '14.0.1.0.4',
+    'version': '14.0.1.0.5',
     'summary': 'This module adds information text only to survey question type.',
     'category': 'base',
-    'author': 'Vertel AB',
-    'website': 'http://www.vertel.se',
+    'author': 'Verified Email Europe AB',
+    'website': 'http://www.verified-email.com',
     'depends': ['survey'],
     'data': [
         'views/survey_question_view.xml',
